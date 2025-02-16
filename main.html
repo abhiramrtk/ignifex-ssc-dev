@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="card.css">
     <link rel="stylesheet" href="mcard.css">
     <link rel="stylesheet" href="abthost.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
@@ -93,7 +95,7 @@
 
 
       <section>
-        <div id="events" class="card-container">
+        <div id="events" class="card-container bg-orange-900">
             <div class="card">
               <div class="card-inner">
                 <div class="card-front">
@@ -183,7 +185,7 @@
     </section>
 
 
-    <section id="location" class="flex flex-col md:flex-row items-center justify-center md:justify-between bg-gray-900 text-white p-8">
+    <section id="location" class="flex flex-col md:flex-row items-center justify-center md:justify-between bg-orange-950 text-white p-8">
         <!-- Left Side -->
         <div class="w-full md:w-1/2 text-center md:text-left">
             <p class="text-xl font-bold">Host: GEC Kozhikode</p>
@@ -217,32 +219,60 @@
             </p>
         </div>
     </section>
-    
-    
-    
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-
-      
-      
-      
-      
 
 
-    
+
+    <section>
+        <div class="bg-orange-950 p-6">
+          <div class="grid grid-cols-1 md:grid-cols-3 text-center relative">
+            <!-- Quick Links Section -->
+            <div class="p-4 flex flex-col items-center relative section">
+              <h3 class="text-xl font-semibold text-orange-400 mb-4 underline-heading">Quick Links</h3>
+              <ul class="space-y-2">
+                <li><a href="#home" class="text-orange-200 hover:text-orange-600">Home</a></li>
+                <li><a href="#events" class="text-orange-200 hover:text-orange-600">Events</a></li>
+                <li><a href="#about" class="text-orange-200 hover:text-orange-600">About</a></li>
+                <li><a href="#contact" class="text-orange-200 hover:text-orange-600">Contact</a></li>
+              </ul>
+              <div class="separator hidden md:block"></div>
+            </div>
+      
+            <!-- Contact Us Section -->
+            <div class="p-4 flex flex-col items-center relative section">
+              <h3 class="text-xl font-semibold text-orange-400 mb-4 underline-heading">Contact Us</h3>
+              <ul class="space-y-2 text-orange-200">
+                <li>Address: 123 Main St</li>
+                <li>Phone: (123) 456-7890</li>
+                <li>Email: contact@example.com</li>
+              </ul>
+              <div class="separator hidden md:block"></div>
+            </div>
+      
+            <!-- Follow Us Section -->
+            <div class="p-4 flex flex-col items-center section">
+              <h3 class="text-xl font-semibold text-orange-400 mb-4 underline-heading">Follow Us</h3>
+              <div class="flex items-center space-x-6 text-orange-200">
+                <a href="https://instagram.com" target="_blank" class="hover:text-orange-600">
+                  <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a href="https://facebook.com" target="_blank" class="hover:text-orange-600">
+                  <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="hover:text-orange-600">
+                  <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Footer Section -->
+      <footer class="bg-orange-950 text-center py-4">
+        <p class="text-orange-200 text-sm">&copy; 2025 Your Website Name. All Rights Reserved.</p>
+      </footer>
+
+
     <script src="./main.js"></script>
     <script src="./card.js"></script>
 </body>

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="home.css">
-    <script src="./main.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
@@ -27,7 +26,7 @@
 
 
     <section id="home" class="flex items-center justify-center h-screen text-center">
-          <div class="relative inline-block">
+        <div class="relative inline-block">
             <!-- Bottom Layer (Light Orange) -->
             <h1 class="absolute text-9xl text-orange-300 left-[5px] top-0">Ignifex</h1>
             
@@ -36,11 +35,38 @@
             
             <!-- Top Layer (White) -->
             <h1 class="relative text-9xl text-white">Ignifex</h1>
-          </div>
-        
-      
+        </div>
     </section>
+
+    <div class="relative grid grid-cols-4 gap-8 text-center 
+                bg-[url('https://i.ibb.co/qM4sHhLC/Whats-App-Image-2025-02-09-at-14-08-40-cc47b0d2.jpg')] 
+                bg-cover bg-center bg-no-repeat p-8 h-36 text-white" style="font-family: 'Roboto Condensed', sans-serif">
     
+        <!-- Semi-transparent overlay -->
+        <div class="absolute inset-0 bg-black bg-opacity-75"></div>
     
+        <!-- Countdown content (Ensuring it stays above the overlay) -->
+        <div class="relative">
+            <p id="days" class="text-6xl font-bold">0</p>
+            <p class="mt-2 text-lg uppercase">Days</p>
+        </div>
+        <div class="relative">
+            <p id="hours" class="text-6xl font-bold">0</p>
+            <p class="mt-2 text-lg uppercase">Hours</p>
+        </div>
+        <div class="relative">
+            <p id="minutes" class="text-6xl font-bold">0</p>
+            <p class="mt-2 text-lg uppercase">Minutes</p>
+        </div>
+        <div class="relative">
+            <p id="seconds" class="text-6xl font-bold">0</p>
+            <p class="mt-2 text-lg uppercase">Seconds</p>
+        </div>
+    
+    </div>
+
+
+    
+    <script src="./main.js"></script>
 </body>
 </html>

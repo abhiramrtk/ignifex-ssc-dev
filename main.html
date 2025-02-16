@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="seciste.css">
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="mcard.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
@@ -87,6 +89,101 @@
           </div>
         </div>
       </section>
+
+
+      <section>
+        <div id="events" class="card-container">
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="https://i.ibb.co/WNrX9VYH/0c912ce42f6d3d657d240c760d879a46.jpg" alt="Workshop Image" class="card-image">
+                </div>
+                <div class="card-back">
+                  <h2>WORKSHOPS</h2>
+                  <p>Details</p>
+                  <a href="carousel2.html" target="_blank" class="btn">Visit</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-front"></div>
+                <div class="card-back">
+                  <h2>Card 2</h2>
+                  <p>Details about Card 2.</p>
+                  <a href="carousel2.html" target="_blank" class="btn">Visit</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-front"></div>
+                <div class="card-back">
+                  <h2>Card 3</h2>
+                  <p>Details about Card 3.</p>
+                  <a href="carousel2.html" target="_blank" class="btn">Visit</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-front"></div>
+                <div class="card-back">
+                  <h2>Card 4</h2>
+                  <p>Details about Card 4.</p>
+                  <a href="carousel2.html" target="_blank" class="btn">Visit</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-front"></div>
+                <div class="card-back">
+                  <h2>Card 5</h2>
+                  <p>Details about Card 5.</p>
+                  <a href="carousel2.html" target="_blank" class="btn">Visit</a>
+                </div>
+              </div>
+            </div>
+            <button class="reset-btn" onclick="resetCards()">×</button>
+        </div>
+      </section>
+
+
+      <section id="events-mobile">
+        <button id="prevBtn" class="slider-btn">❮</button>
+        <div class="mobile-slider-container">
+            <div class="mobile-card" style="background-image: url('https://i.ibb.co/WNrX9VYH/0c912ce42f6d3d657d240c760d879a46.jpg');">
+                <div class="card-inner">
+                    <h2>WORKSHOPS</h2>
+                    <p>Details</p>
+                    <a href="carousel2.html" target="_blank" class="btn">Visit</a>
+                </div>
+            </div>
+            <div class="mobile-card" style="background-image: url('https://via.placeholder.com/180x250');">
+                <div class="card-inner">
+                    <h2>Card 2</h2>
+                    <p>Details about Card 2.</p>
+                    <a href="carousel2.html" target="_blank" class="btn">Visit</a>
+                </div>
+            </div>
+            <div class="mobile-card" style="background-image: url('https://via.placeholder.com/180x250');">
+                <div class="card-inner">
+                    <h2>Card 3</h2>
+                    <p>Details about Card 3.</p>
+                    <a href="carousel2.html" target="_blank" class="btn">Visit</a>
+                </div>
+            </div>
+        </div>
+        <button id="nextBtn" class="slider-btn">❯</button>
+    </section>
+
+      
+      
+      
       
       
       
@@ -107,5 +204,6 @@
 
     
     <script src="./main.js"></script>
+    <script src="./card.js"></script>
 </body>
 </html>

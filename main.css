@@ -121,7 +121,8 @@
         width: 95%;
         border-radius:0;
         padding: 10px;
-        transform: translateX(3%);
+        transform: translateX(2.5%);
+        border: solid 1px orangered;
     }
 
     .logo {

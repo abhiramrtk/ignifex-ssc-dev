@@ -36,7 +36,7 @@ function toggleMenu() {
 
 
 //counter
-const targetDate = new Date('2025-03-15T00:00:00').getTime();
+const targetDate = new Date('2025-03-07T09:00:00').getTime();
 
   function updateCountdown() {
     const now = new Date().getTime();

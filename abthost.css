@@ -1,0 +1,35 @@
+/* Custom class for the background blur effect */
+.bg-blur-effect {
+    background-image: url('https://i.ibb.co/99t3tTcp/Firefly-20250205144553.jpg'); /* Your background image */
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px); /* Apply blur to the background */
+    position: absolute; /* Position it behind the content */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Ensure it stays behind the content */
+}
+
+/* Adjust the section's height and prevent content overlap */
+#about-host {
+    position: relative;
+    height: auto; /* Auto height for content flexibility */
+    padding: 50px 0; /* Padding around the content */
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* Adjust padding for mobile and desktop views */
+@media (max-width: 768px) {
+    #about-host {
+        height: auto;
+        padding: 30px 20px; /* Less padding on smaller screens */
+    }
+    .text-lg {
+        font-size: 1rem; /* Reduce font size on mobile */
+    }
+    .text-4xl {
+        font-size: 2rem; /* Adjust heading size */
+    }
+}

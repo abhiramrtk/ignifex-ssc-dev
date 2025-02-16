@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="home.css">
+    <script src="./main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="menu" onclick="toggleMenu()">☰</div>
+        <div class="logo"></div>
+        <a href="register.html" class="register-btn">Register</a>   
+    </nav>
+
+    <div class="sidebar" id="sidebar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact">Direction</a></li>
+        </ul>
+    </div>
+
+
+    <section id="home" class="flex items-center justify-center h-screen text-center">
+          <div class="relative inline-block">
+            <!-- Bottom Layer (Light Orange) -->
+            <h1 class="absolute text-9xl text-orange-300 left-[5px] top-0">Ignifex</h1>
+            
+            <!-- Middle Layer (Red) -->
+            <h1 class="absolute text-9xl text-red-500 left-[2.5px] top-0">Ignifex</h1>
+            
+            <!-- Top Layer (White) -->
+            <h1 class="relative text-9xl text-white">Ignifex</h1>
+          </div>
+        
+      
+    </section>
+    
+    
+</body>
+</html>

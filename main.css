@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Prompt", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Navigationbar and menu */
+
+.navbar {
+    position: fixed;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 99%;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 10px 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-bottom: solid 2px orangered;
+}
+
+/* Center the logo */
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+    width: 50px; /* Adjust size */
+    height: 50px;
+    background: url('./assets/logo.png') no-repeat center/contain;
+    transform: translateX(2%);
+}
+
+.register-btn {
+    font-size: 16px;
+    text-decoration: none;
+    color: yellow;
+    background-color: #ec5c24;
+    padding: 8px 12px;
+    border-radius: 14px;
+    transition: 0.3s ease-in-out;
+    margin-left: auto;
+}
+
+.register-btn:hover {
+    color: white;
+}
+
+/* Move menu button to the right */
+.menu {
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+    color: yellow;
+    z-index: 1005;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -260px; /* Hide initially */
+    width: 260px;
+    height: 100%;
+    background: rgba(250, 128, 32, 0.7);
+    backdrop-filter: blur(10px);
+    padding-top: 60px;
+    transition: left 0.3s ease-in-out;
+    z-index: 1002;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: center;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Smooth transition effect when hovering over list items */
+.sidebar ul li:hover {
+    background: #fc5638;
+    transform: scale(1.05)translateX(10px);
+}
+
+.sidebar ul li a {
+    color: rgba(115, 21, 97, 1);
+    text-decoration: none;
+    font-size: 18px;
+}
+.sidebar ul li a:hover {
+    color: rgb(219, 202, 42);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar.active {
+    left: 0; /* Slide in */
+}
+
+
+@media (max-width: 768px){
+    .navbar {
+        top: 5px;
+        left: 0;
+        transform: none;
+        width: 95%;
+        border-radius:0;
+        padding: 10px;
+        transform: translateX(3%);
+    }
+
+    .logo {
+        width: 40px; /* Reduce logo size for mobile */
+        height: 40px;
+        transform: translateX(10%);
+    }
+
+    .register-btn {
+        font-size: 16px;
+        text-decoration: none;
+        color: yellow;
+        background-color: #ec5c24;
+        padding: 5px 8px;
+        border-radius: 14px;
+        transition: 0.3s ease-in-out;
+        margin-left: auto;
+    }
+
+
+
+    .menu {
+        font-size: 20px; /* Reduce menu icon size */
+    }
+
+    /* Sidebar */
+    .sidebar {
+        width: 80%; /* Full width sidebar */
+        left: -100%; /* Hide initially */
+        height: 50%;
+        top: 25%;
+        backdrop-filter: blur(0px);
+        background: rgba(250, 128, 32,0.9);
+        border-radius: 20px;
+
+
+
+
+    }
+
+    .sidebar.active {
+        left: 10%; /* Slide in */
+        height: 50%;
+        top: 25%;
+
+
+    }
+
+}

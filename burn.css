@@ -4,8 +4,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1; /* Ensure fire is above the h1 text */
-    pointer-events: none; /* Allow clicks to pass through to the text */
+   pointer-events: none; /* Allow clicks to pass through to the text */
 }
 
 .fire {
@@ -14,9 +13,9 @@
     height: 500px;
     background: #ff9900;
     filter: blur(20px) contrast(30);
-    border: 250px solid #000;
+    border: 300px solid #000;
     border-bottom-color: transparent;
-    border-radius: 40%;
+    border-radius: 100px;
     box-sizing: border-box;
     transform: scale(0.4, 1);
 }

@@ -69,35 +69,3 @@ function resetCards() {
 
 
 
-//mcard-start
-
-// Track the current slide index
-document.addEventListener("DOMContentLoaded", function () {
-    let mCurrentIndex = 0;
-    const mCards = document.querySelectorAll(".mobile-card");
-    const mTotalCards = mCards.length;
-    const mPrevBtn = document.getElementById("prevBtn");
-    const mNextBtn = document.getElementById("nextBtn");
-
-    function updateMCards() {
-        mCards.forEach((mCard, mIndex) => {
-            mCard.style.display = mIndex === mCurrentIndex ? "block" : "none";
-        });
-    }
-
-    mPrevBtn.addEventListener("click", function () {
-        mCurrentIndex = (mCurrentIndex - 1 + mTotalCards) % mTotalCards;
-        updateMCards();
-    });
-
-    mNextBtn.addEventListener("click", function () {
-        mCurrentIndex = (mCurrentIndex + 1) % mTotalCards;
-        updateMCards();
-    });
-
-    updateMCards();
-});
-
-
-
-//mcard-end

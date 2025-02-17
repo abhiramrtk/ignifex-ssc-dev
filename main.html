@@ -156,8 +156,18 @@
       </section>
 
 
-    <section id="events-mobile">
-       
+    <section id="events-mobile" class="bg-gradient-to-tr from-orange-900 to-orange-950">
+      <div class="mcard-container" id="mcard">
+        <div class="mcard-content">
+            <h2 class="mcard-title" id="mcard-title">Card 1</h2>
+            <p class="mcard-description" id="mcard-description">This is the first card.</p>
+            <a href="#" class="mbtn" id="mcard-link">Visit Site</a>
+        </div>
+    </div>
+    <div class="mnav-buttons">
+        <button onclick="mprevCard()">Previous</button>
+        <button onclick="mnextCard()">Next</button>
+    </div>
     </section>
 
     <section id="about-host" class="relative bg-cover bg-center h-auto md:h-96 flex items-center justify-center text-center">
@@ -235,5 +245,6 @@
 
     <script src="./main.js"></script>
     <script src="./card.js"></script>
+    <script src="mc.js"></script>
 </body>
 </html>

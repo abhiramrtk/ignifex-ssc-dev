@@ -1,18 +1,11 @@
-body {
-    background: #000;
-    height: 100vh;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-}
-
-#ui {
+/* Fire Effect Styles */
+#fireUI {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -125px; /* Adjusted based on $fireSize / 4 */
     transform: translate(-50%, -50%);
-    transition: 100ms;
+    z-index: 1; /* Ensure fire is above the h1 text */
+    pointer-events: none; /* Allow clicks to pass through to the text */
 }
 
 .fire {
@@ -21,7 +14,7 @@ body {
     height: 500px;
     background: #ff9900;
     filter: blur(20px) contrast(30);
-    border: 250px solid #000; /* Adjusted based on $fireSize / 2 */
+    border: 250px solid #000;
     border-bottom-color: transparent;
     border-radius: 40%;
     box-sizing: border-box;
@@ -31,7 +24,7 @@ body {
 .burn {
     position: absolute;
     top: 500px;
-    left: -50px; /* Adjusted based on $burnSize / 2 */
+    left: -50px;
     width: 100px;
     height: 100px;
     background: #000;
@@ -43,6 +36,6 @@ body {
         transform: translateY(0);
     }
     100% {
-        transform: translateY(-600px); /* Adjusted based on $fireSize + $burnSize */
+        transform: translateY(-600px);
     }
 }

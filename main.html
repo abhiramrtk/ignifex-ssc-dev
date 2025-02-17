@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="mcard.css">
     <link rel="stylesheet" href="abthost.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="burn.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
@@ -32,20 +33,26 @@
 
 
     <section id="home" class="flex flex-col items-center justify-center h-screen text-center">
-        <div class="relative inline-block">
-            <!-- Bottom Layer (Light Orange) -->
-            <h1 class="absolute text-9xl text-orange-300 left-[5px] top-0">Ignifex</h1>
-            
-            <!-- Middle Layer (Red) -->
-            <h1 class="absolute text-9xl text-red-500 left-[2.5px] top-0">Ignifex</h1>
-            
-            <!-- Top Layer (White) -->
-            <h1 class="relative text-9xl text-white">Ignifex</h1>
-        </div>
-        <h2 class="text-2xl font-semibold text-gray-300 tracking-wide mt-3 drop-shadow-md">23RD ANNUAL ISTE<br>
-          STATE STUDENT CONVENCTION<br>
-          GOVERNMENT ENGINEERING COLLEGE KOZHIKODE</h2>
-    </section>
+      <!-- Fire Effect Container -->
+      <div id="fireUI" class="absolute">
+          <div class="fire" id="newFireContainer"></div>
+      </div>
+  
+      <!-- Text Content -->
+      <div class="relative inline-block">
+          <!-- Bottom Layer (Light Orange) -->
+          <h1 class="absolute text-9xl text-orange-300 left-[5px] top-0">Ignifex</h1>
+          
+          <!-- Middle Layer (Red) -->
+          <h1 class="absolute text-9xl text-red-500 left-[2.5px] top-0">Ignifex</h1>
+          
+          <!-- Top Layer (White) -->
+          <h1 class="relative text-9xl text-white">Ignifex</h1>
+      </div>
+      <h2 class="text-2xl font-semibold text-gray-300 tracking-wide mt-3 drop-shadow-md">23RD ANNUAL ISTE<br>
+         STATE STUDENT CONVENCTION<br>
+         GOVERNMENT ENGINEERING COLLEGE KOZHIKODE</h2>
+  </section>
 
     <div class="relative grid grid-cols-4 gap-8 text-center 
                 bg-[url('https://i.ibb.co/qM4sHhLC/Whats-App-Image-2025-02-09-at-14-08-40-cc47b0d2.jpg')] 
@@ -253,5 +260,7 @@
     <script src="./main.js"></script>
     <script src="./card.js"></script>
     <script src="mc.js"></script>
+    <script src="burn.js"></script>
+   
 </body>
 </html>

@@ -1,5 +1,5 @@
-// script.js
-const fireContainer = document.getElementById('fireContainer');
+// fire.js
+const fireContainer = document.getElementById('newFireContainer');
 const burnCount = 40;
 
 // Function to generate a random number within a range

@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  min-height: 100vh; /* Allow section to grow if needed */
+  min-height: 20vh; /* Allow section to grow if needed */
   padding: 2rem 1rem; /* Add some padding for better spacing */
   overflow: hidden; /* Prevent unwanted overflow */
 }
